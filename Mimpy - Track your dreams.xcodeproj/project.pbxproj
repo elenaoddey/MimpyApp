@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3056D220282182CD00B32AF9 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 3056D21F282182CD00B32AF9 /* FSCalendar */; };
+		3056D22228218DD100B32AF9 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3056D22128218DD100B32AF9 /* DescriptionView.swift */; };
+		305B49C7281A9CE800AEB1B6 /* SecondPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305B49C6281A9CE800AEB1B6 /* SecondPage.swift */; };
+		3072B5452821657B00D80AA9 /* TitlePopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3072B5442821657B00D80AA9 /* TitlePopUpView.swift */; };
 		30CC3FD8281933EA003CE54B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CC3FD7281933EA003CE54B /* AppDelegate.swift */; };
 		30CC3FDA281933EA003CE54B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CC3FD9281933EA003CE54B /* SceneDelegate.swift */; };
 		30CC3FDC281933EA003CE54B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CC3FDB281933EA003CE54B /* ViewController.swift */; };
@@ -16,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3056D22128218DD100B32AF9 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		305B49C6281A9CE800AEB1B6 /* SecondPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPage.swift; sourceTree = "<group>"; };
+		3072B5442821657B00D80AA9 /* TitlePopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePopUpView.swift; sourceTree = "<group>"; };
 		30CC3FD4281933EA003CE54B /* Mimpy - Track your dreams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mimpy - Track your dreams.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30CC3FD7281933EA003CE54B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30CC3FD9281933EA003CE54B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3056D220282182CD00B32AF9 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +64,14 @@
 		30CC3FD6281933EA003CE54B /* Mimpy - Track your dreams */ = {
 			isa = PBXGroup;
 			children = (
+				30CC3FE0281933EA003CE54B /* Assets.xcassets */,
 				30CC3FD7281933EA003CE54B /* AppDelegate.swift */,
 				30CC3FD9281933EA003CE54B /* SceneDelegate.swift */,
 				30CC3FDB281933EA003CE54B /* ViewController.swift */,
+				305B49C6281A9CE800AEB1B6 /* SecondPage.swift */,
+				3072B5442821657B00D80AA9 /* TitlePopUpView.swift */,
 				30CC3FDD281933EA003CE54B /* Main.storyboard */,
-				30CC3FE0281933EA003CE54B /* Assets.xcassets */,
+				3056D22128218DD100B32AF9 /* DescriptionView.swift */,
 				30CC3FE2281933EA003CE54B /* LaunchScreen.storyboard */,
 				30CC3FE5281933EA003CE54B /* Info.plist */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = "Mimpy - Track your dreams";
+			packageProductDependencies = (
+				3056D21F282182CD00B32AF9 /* FSCalendar */,
+			);
 			productName = "Mimpy - Track your dreams";
 			productReference = 30CC3FD4281933EA003CE54B /* Mimpy - Track your dreams.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 30CC3FCB281933EA003CE54B;
+			packageReferences = (
+				3056D21E282182CD00B32AF9 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 30CC3FD5281933EA003CE54B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30CC3FDC281933EA003CE54B /* ViewController.swift in Sources */,
+				3072B5452821657B00D80AA9 /* TitlePopUpView.swift in Sources */,
 				30CC3FD8281933EA003CE54B /* AppDelegate.swift in Sources */,
+				3056D22228218DD100B32AF9 /* DescriptionView.swift in Sources */,
 				30CC3FDA281933EA003CE54B /* SceneDelegate.swift in Sources */,
+				305B49C7281A9CE800AEB1B6 /* SecondPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3056D21E282182CD00B32AF9 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3056D21F282182CD00B32AF9 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3056D21E282182CD00B32AF9 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 30CC3FCC281933EA003CE54B /* Project object */;
 }
